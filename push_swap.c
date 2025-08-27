@@ -5,8 +5,8 @@ typedef struct
     int maxsize;
     int top;
     int items[];
-} a;
+} stack;
 
-void push_swap(a stack_a)
+void push_swap(stack a)
 {
 }
