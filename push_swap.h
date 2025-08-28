@@ -1,15 +1,22 @@
 #ifndef PUSH_SWAP_H
 #define PUSH_SWAP_H
 
+
 #include <stdlib.h>
 #include <stdio.h>
 #include <unistd.h>
 
-#define SUCCESS 1
-#define FAILURE 0
+// testヘッダー
+#include <string.h>
+#include <ctype.h>
 
+#define TRUE 1
+#define FALSE 0
+
+// dataタイプ
 typedef int data_t;
 
+// stack構造
 typedef struct stack_s
 {
     int num;
