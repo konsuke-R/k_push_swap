@@ -1,7 +1,6 @@
 #ifndef PUSH_SWAP_H
 #define PUSH_SWAP_H
 
-
 #include <stdlib.h>
 #include <stdio.h>
 #include <unistd.h>
@@ -18,11 +17,12 @@
 // dataタイプ
 typedef int data_t;
 
-// stack構造
+// 双方向リスト
 typedef struct stack_s
 {
-    int num;
-    data_t *data;
+    data_t value;
+    struct stack_s *prev;
+    struct stack_s *next;
 } stack_t;
 
 #endif
