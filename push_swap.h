@@ -15,7 +15,7 @@
 #define FALSE 0
 
 // dataタイプ
-typedef int data_t;
+typedef long data_t;
 
 // 双方向リスト
 typedef struct stack_s
@@ -24,5 +24,23 @@ typedef struct stack_s
     struct stack_s *prev;
     struct stack_s *next;
 } stack_t;
+
+// コマンド
+typedef enum s_cmd {
+    PA,
+    PB,
+    SA,
+    SB,
+    SS,
+    RA,
+    RB,
+    RR,
+    RRA,
+    RRB,
+    RRR
+} t_cmd;
+
+// 関数
+int validate_argv(char **);
 
 #endif

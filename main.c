@@ -16,6 +16,7 @@ void main(int argc, char **argv)
     split_argv = ft_split(argv[1], ' ');
 
     // ヴァリデーションチェックも行う
+    validate_argv(char **spit_argv);
 
     // 数字ごとにセパレート
 

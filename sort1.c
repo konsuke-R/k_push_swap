@@ -3,8 +3,8 @@
 void push(stack_t *stk, data_t push_data)
 {
     // stackサイズを超えていない場合
-    stk->data[stk->num] = push_data;
-    stk->num++;
+    stk->value[stk->idx] = push_data;
+    stk++;
 }
 void pop(stack_t *stk, data_t *pop_data)
 {
@@ -35,3 +35,7 @@ void double_rotate(stack_t *stk_a, stack_t *stk_b)
     rotate(stk_b);
 }
 
+void sa(stack_t *stk_a)
+{
+    stk_a->value[stk_a->idx] = stk_a->next;
+}
